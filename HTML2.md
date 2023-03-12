@@ -1266,19 +1266,20 @@ ex) number, date, email, password, checkbox, radio
 콘텐츠의 요약내용이 SNS에 게시되는데 최적화된 데이터를 가지고 갈 수 있도록 설정하는 것
 
 ### 기본적으로 웹에 설정해줘야하는 og 메타태그
+![Untitled](https://user-images.githubusercontent.com/96164365/224527173-f067a7a3-5b52-412d-8cbf-6f7f7ca87aca.jpeg)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ebc2b55a-7893-42b8-9445-1d494ed01ec0/Untitled.jpeg)
 
 ### Naver 블로그, 카카오톡 미리보기 설정
+![웹페이지](https://user-images.githubusercontent.com/96164365/224527338-d5deb11e-edc1-46a9-a082-05596fdcdcf9.jpeg)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/629bdf7b-db21-48a0-b1b0-a1c917672fcc/Untitled.jpeg)
 
 ### 트위터 미리보기기 설정
+![트위터](https://user-images.githubusercontent.com/96164365/224527340-706396ce-72c1-44b1-96f1-68a256c316ee.jpeg)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07f58c37-e64e-484c-b76a-218cd3c797d1/Untitled.jpeg)
 
-### 모바일 앱 미리보기 설정
+### 모바일 앱 미리보기 
+![모바일 앱](https://user-images.githubusercontent.com/96164365/224527342-fbd48747-6978-4b74-93cb-a403ee28334c.png)
+설정
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/488b8365-c702-4a78-91a1-72be6bffee98/Untitled.png)
 
 as
