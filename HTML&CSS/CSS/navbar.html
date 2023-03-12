@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+      }
+      nav {
+        background-color: #34495e;
+        width: 100%;
+        height: 80px;
+      }
+      nav li {
+        display: inline-block;
+        margin: 0 8px;
+        line-height: 80px;
+      }
+      nav a {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        /* uppercase -> 모든 단어를 대문자로 변환
+        capitalize는 각 단어의 첫글자만 대문자로 변환
+        lowercase는 모든단어를 소문자로 변환 */
+      }
+      /* a.active, */
+      a:hover {
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- nav태그는 semantic -> 즉 의미를 가지고 있다. -->
+
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

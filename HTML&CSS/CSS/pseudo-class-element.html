@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo class&element</title>
+    <style>
+      a {
+        font-size: 30px;
+        /* 폰트 사이즈 키우기 */
+      }
+      a:link {
+        color: cyan;
+        /* 기본적으로 링크가 cyan색으로 표기 */
+      }
+      a:visited {
+        color: red;
+        /* 방문한 링크는 빨간색으로 표시 */
+      }
+      a:hover {
+        color: blue;
+        font-weight: 900;
+        /* 마우스를 가져다 대면 파란색으로 표시 */
+      }
+      fieldset:hover {
+        background-color: lightgray;
+        box-shadow: 0 0 20px gray;
+        /* field에 마우스를 올리면 gray색으로 변경 */
+      }
+      input:focus {
+        outline: none;
+        border: 3px solid red;
+        box-shadow: 0 0 20px rgb(255, 117, 117);
+        /* 이름 또는 나이의 text blank에 마우스 커서를 클릭 후 입력 대기 상태가 되면 빨간색 테두리 */
+      }
+      a:active {
+        color: yellow;
+        /* 클릭 중일 때 작동 */
+      }
+      .field {
+        margin-bottom: 10px;
+        /* bottom에서 margin을 10px 값만큼 준다 */
+      }
+      /* li:nth-child(1) {
+        background-color: yellow;
+      } */
+      /* 첫번째 li가 노란색으로 배경이 칠해짐 */
+      /* li:nth-child(even) {
+        background-color: yellow;
+      } */
+      /* even은 짝수만 적용한다는 뜻 */
+      /* li:nth-child(odd) {
+        background-color: yellow;
+      } */
+      /* odd 홀수만 적용 */
+      li:nth-child(odd) {
+        background-color: yellow;
+      }
+      li:not(.target) {
+        font-size: 30px;
+      }
+      /* class가 target인 li태그만 style을 제거하겠다. */
+
+      /* 가상요소 */
+      /* .required::before {
+        content: '*';
+        margin-right: 2px;
+        color: red;
+        font-size: 18px;
+      } */
+      /* .required::after {
+        content: '*';
+        margin-right: 2px;
+        color: red;
+        font-size: 18px;
+      } */
+      /* 특정 태그 앞,뒤에 가상요소를 생성할 수 있다. */
+      .required::before {
+        content: '*';
+        margin-right: 2px;
+        color: red;
+        font-size: 18px;
+      }
+      /* 툴팁 - 특정 정보를 보여주는 말풍선 -> 마우스 오버시 말풍선*/
+      /* [data-tooltip]::after {
+        content: attr(data-tooltip); */
+      /* attr()함수를 사용하여 data-tooltip을 넣어서 아래에서 명시한 문장을 가져온다 */
+      /* position: absolute;
+        top: 0px;
+        left: 0px; */
+      /* 위의 top과 left를 적용해서 data-tooltip의 메시지가 body태그 기준으로 absolute가 적용된다. */
+
+      /* } */
+      [data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: relative;
+        top: 0px;
+        left: 0px;
+        background-color: black;
+        color: white;
+        width: 200px;
+        /* hover를 사용하여 보내기에 마우스를 올릴 시 글자가 나타나게 되었다.
+            추가로 relative를 사용하여 보내기에서 부터 상대적으로 position이
+            변경되게 만들었다. */
+      }
+      .letter::first-letter {
+        font-size: 60px;
+        color: blue;
+      }
+      /* 첫번째 글자가 변경 */
+      .line::first-line {
+        background-color: yellow;
+        color: blue;
+        font-size: 20px;
+      }
+      /* 첫번째 줄이 변경 */
+      p::selection {
+        background-color: red;
+        color: white;
+      }
+      /* 드래그 시 변경(선택자) */
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>pseudo class</legend>
+      <div>
+        <a href="https://naver.com">네이버</a>
+        <a href="https://kakao.com">카카오</a>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>focus, before, after</legend>
+      <div class="field">
+        <label class="required" for="name">이름</label>
+        <input type="text" name="" id="name" />
+      </div>
+      <div class="field">
+        <label class="required" for="age">나이</label>
+        <input type="text" name="" id="age" />
+      </div>
+      <button data-tooltip="이 버튼을 클락하여 정보를 보내세요">보내기</button>
+      <!-- data-tooltip (-)대쉬가 붙는다. -->
+    </fieldset>
+    <fieldset>
+      <legend>nth-child, not</legend>
+      <ul>
+        <li class="target">1content</li>
+        <li>2content</li>
+        <li>3content</li>
+        <li>4content</li>
+        <li>5content</li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>first-letter, first-line, section</legend>
+      <div>
+        <p class="letter">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+          nesciunt nisi facere inventore impedit sit quod quia dignissimos
+          itaque, nemo eius, earum quo iure veritatis, numquam consequatur ea
+          cupiditate eos? Inventore asperiores quisquam molestiae sapiente iure
+          adipisci odio explicabo, repellendus nostrum praesentium expedita
+          voluptatem ipsam quidem dignissimos delectus, recusandae animi magnam
+          nobis harum maxime repellat? Alias nemo aperiam neque sapiente!
+        </p>
+        <p class="line">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+          molestias ipsa. Nulla qui alias consequuntur vel adipisci, et debitis
+          deserunt consectetur laudantium autem quod nam sed officiis cum
+          voluptates tempore. Porro quisquam, aliquid dignissimos sit sed odio
+          veniam voluptatem tempore repellendus, officia quidem assumenda iure
+          dolorum quas soluta ut beatae consectetur labore vitae ducimus
+          deserunt ipsum hic temporibus quo. Velit!
+          <!-- lorem -->
+        </p>
+      </div>
+    </fieldset>
+  </body>
+</html>

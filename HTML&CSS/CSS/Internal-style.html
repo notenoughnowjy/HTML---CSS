@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Style</title>
+    <!-- 인터널 스타일 -->
+    <style>
+      h1 {
+        color: blue;
+      }
+      .content {
+        border: 2px solid red;
+        background-color: yellow;
+        padding: 10px;
+      }
+      * {
+        color: gray;
+        /* color: gray !important;
+            이처럼 important를 붙여주게 된다면
+            우선순위가 된다. */
+        /* 지정되지 않은 스타일 컬러를 Gray색으로 바꿔준다 */
+      }
+
+      .creater {
+        color: red;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>헬스</h1>
+    <p class="content">사이드 레터럴 레이즈</p>
+    <a href="#">브라우저 스타일의 링크</a> <br />
+    <hr />
+    <a class="creater" href="#">제작자 스타일</a>
+  </body>
+</html>

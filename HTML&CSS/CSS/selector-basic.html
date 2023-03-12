@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Basic</title>
+    <style>
+      /* *(전체 선택자)는 브라우저가 가지고 있는 기본 스타일을 초기화할 때 사용 */
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      /* Type 선택자 */
+      h2 {
+        color: green;
+      }
+      p {
+        color: blue;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      /* Class 선택자 */
+      .blue {
+        color: blue;
+      }
+      .red {
+        color: red;
+      }
+      /* ID 선택자 */
+      #title {
+        font-size: 40px;
+        color: darkgray;
+        background-color: yellow;
+      }
+
+      /* 그룹 선택지 */
+      h1,
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">애국가</h1>
+    <hr />
+    <h2>1절</h2>
+    <p>
+      <span class="blue">동해</span>물과 <span class="red">백두산</span>이
+      마르고 닳도록 <br />
+      하느님이 보우하사 우리나라 만세 <br />
+    </p>
+    무궁화 삼천리 화려강산 대한사람 <br />
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border</title>
+    <style>
+      .border {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        /* border: 1px solid black;
+        border-top: 10px dotted red;
+        border-left: 1px solid yellow;
+        border-right: 3px solid cyan; */
+        /* border: 1px solid black;
+        border-top: 10px solid red;
+        border-left: 1px solid yellow;
+        border-right: 3px solid cyan; */
+      }
+      .border-radius {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .content-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid blue;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: content-box;
+      }
+      .border-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        /* box-sizing을 border-box로 설정하게 된다면
+        계산할 때 편해진다.
+        -> 다시 한번 공부해 보기 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border"></div>
+    <div class="border-radius"></div>
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+  </body>
+</html>

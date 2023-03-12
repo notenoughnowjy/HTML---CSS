@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* content, padding, margin, border */
+      div.content {
+        background-color: gray;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        /* width와 height를 적용하고 싶다면 display를 inline-block형태로 바꾸면 된다. */
+        display: inline-block;
+      }
+      div.padding {
+        border: 1px solid black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding: 20px 20px 20px 20px;
+      }
+      div.margin {
+        border: 1px solid black;
+        /* margin: 20px 10px; */
+        /* margin-left: 20px; */
+      }
+      .shape {
+        /* margin 중첩 현상 */
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <span>Hello CSS</span>
+    <div class="padding">
+      김치를 꺼내 도마 위에 놓고 적당한 크기로 썬다. 프라이팬을 달군 후 불을
+      중불로 맞춘다.[1] 식용유를 두르고 적절히 김치를 볶는다.[2] 기름을 많이
+      넣으면 김치맛이 안 날 수 있으므로 적당하게 넣자. 프라이팬에 부으면서 살짝
+      한 바퀴 돌려주는 정도가 딱 적당하다. 가장 중요한 재료는 올리고당이다.
+      환상의 자태와 맛을 볼 수 있다. 올리고당 대신 설탕을 넣어도 상관은 없다.
+      김치의 자잘한 단점[3]을 가릴수도 있겠지만 김치의 감칠맛을 끌어올려주기도
+      한다.[4] 반쯤 볶아진 김치에 밥을 비롯한 기타 재료들을 투입하고[5] 수저나
+      주걱으로 밥알을 흩어주듯이 풀며, 적당히 섞일 때까지 볶는다. 포인트는
+      들어간 김치국물을 증발시켜, 밥을 넣었을 때 질척하지 않게 하는 것이다. 밥
+      외의 다른 재료들은 익는 데 걸리는 시간 정도를 감안해서 집어넣는 것이 좋다.
+      일단 김치를 밥과 대략 1:1 정도의 비율로 넣어주면 먹을 만한데, 사실
+      김치죽이 되는 꼴만 아니면 대부분 먹을 수 있다. 귀찮음과 빈곤의 신이 강림한
+      당신이라면 김치와 밥만 가지고 볶아보자. 김치가 들어가고 밥을 볶았으니
+      일단은 김치볶음밥이 맞다.
+    </div>
+    <div class="margin">
+      김치를 꺼내 도마 위에 놓고 적당한 크기로 썬다. 프라이팬을 달군 후 불을
+      중불로 맞춘다.[1] 식용유를 두르고 적절히 김치를 볶는다.[2] 기름을 많이
+      넣으면 김치맛이 안 날 수 있으므로 적당하게 넣자. 프라이팬에 부으면서 살짝
+      한 바퀴 돌려주는 정도가 딱 적당하다. 가장 중요한 재료는 올리고당이다.
+      환상의 자태와 맛을 볼 수 있다. 올리고당 대신 설탕을 넣어도 상관은 없다.
+      김치의 자잘한 단점[3]을 가릴수도 있겠지만 김치의 감칠맛을 끌어올려주기도
+      한다.[4] 반쯤 볶아진 김치에 밥을 비롯한 기타 재료들을 투입하고[5] 수저나
+      주걱으로 밥알을 흩어주듯이 풀며, 적당히 섞일 때까지 볶는다. 포인트는
+      들어간 김치국물을 증발시켜, 밥을 넣었을 때 질척하지 않게 하는 것이다. 밥
+      외의 다른 재료들은 익는 데 걸리는 시간 정도를 감안해서 집어넣는 것이 좋다.
+      일단 김치를 밥과 대략 1:1 정도의 비율로 넣어주면 먹을 만한데, 사실
+      김치죽이 되는 꼴만 아니면 대부분 먹을 수 있다. 귀찮음과 빈곤의 신이 강림한
+      당신이라면 김치와 밥만 가지고 볶아보자. 김치가 들어가고 밥을 볶았으니
+      일단은 김치볶음밥이 맞다.
+    </div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </body>
+</html>

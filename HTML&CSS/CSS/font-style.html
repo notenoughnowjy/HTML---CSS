@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      /* * {
+        margin: 0px;
+        padding: 0px;
+      } */
+      html {
+        /* font-family: serif, monospace;*/
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+      .title {
+        font-size: 18px;
+        color: blue;
+      }
+      .content {
+        font-size: 18px;
+      }
+      .font-italic {
+        font-style: italic;
+      }
+      .font-weight-bold {
+        font-weight: bold;
+      }
+      .font-weight-300 {
+        font-weight: 300;
+      }
+      .font-variant {
+        font-variant: small-caps;
+      }
+      .rectangle.width {
+        width: 20vw;
+        height: 100px;
+        background-color: yellow;
+      }
+      .rectangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: black;
+      }
+      /* monospace는 브라우저가 서체를 지원하지 않을때 지정해준다. */
+    </style>
+  </head>
+  <body>
+    <h2 class="title">유투브 짐코딩</h2>
+    <p class="content">실용적인 웹사이트</p>
+    <p class="content font-italic">실용적인 웹사이트</p>
+    <p class="content font-weight-bold">실용적인 웹사이트</p>
+    <p class="content font-weight-300">실용적인 웹사이트</p>
+    <p class="content font-variant">HELLO, parkjunyoung</p>
+    <hr />
+    <h2>px</h2>
+    <p>HTML을 잘 만들어보자</p>
+    <h2>rem</h2>
+    <p>HTML을 잘 만들어보자</p>
+    <h2>em</h2>
+    <p>HTML을 잘 만들어보자</p>
+    <hr />
+    <!-- Viewport Width -->
+    <h2>vw</h2>
+    <div class="rectangle width"></div>
+    <!-- Viewport height -->
+    <h2>vh</h2>
+    <div class="rectangle height"></div>
+  </body>
+</html>
